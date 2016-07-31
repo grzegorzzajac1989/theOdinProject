@@ -1,0 +1,81 @@
+body{
+	margin:0;
+	font-family:Helvetica, Arial;
+	font-size:small;
+}
+
+#nav {
+  float: right;
+  margin-top: 16px;
+   
+}
+
+#foot {
+	background-color:#f2f2f2;
+	position:fixed;
+	width:100%;
+	bottom:0px;
+	border-top: 1px solid #e4e4e4;
+	padding: 14px;
+}
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+ul > li {
+	display: inline-block;
+	
+}
+
+#nav li {
+	margin-right: 27px;
+}
+
+#foot li {
+	margin-right: 12px;
+}
+
+#foot ul {
+	padding-left: 27px;
+	padding-right: 27px;
+}
+
+li > a {
+	text-decoration: none;
+	color: #777;
+}
+
+li:hover {
+	text-decoration: underline;
+}
+
+#signIn {
+	color: #FFF;
+	background-color: #407eea;
+	padding: 7px 13px;
+	border: none;
+	border-radius: 3px;
+	font-weight: bold;
+
+}
+
+.google-search {
+  
+   display: block;
+	margin: 0;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+
+}
+
+.search-bar {
+  margin: 25px 1px;
+  
+}
