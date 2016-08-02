@@ -49,7 +49,7 @@ normalHover();
 var getRandomColor=function() {
     var color = '#';
     for (var i = 0; i < 6; i++ ) {
-        color += [Math.floor(Math.random() * 16)];
+        color += [Math.floor(Math.random() * 8)];
     }
     return color;
 }
