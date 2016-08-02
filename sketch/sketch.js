@@ -1,17 +1,19 @@
 $(document).ready(function() {
 
-var clientHeight = $( window ).height();
-var clientWidth = $( window ).width();
+    var clientHeight = $ (window).height();
+    var clientWidth = $ (window).width();
 
-$button1=$("<button id='button1'>change grid</button>");//define button1
-$button2=$("<button id='button2'>random colors</button>");//define button2
-$button3=$("<button id='button3'>clear</button>");//define button3
-$("<style type='text/css'> .button{ height: "+(0.05*clientHeight)+"px; width: "+(0.15*clientWidth)+"px; margin:auto 10px;} </style>").appendTo('body');//button css
+    $button1=$("<button id='button1'>Change Grid</button>");
+    $button2=$("<button id='button2'>Random Colors</button>");
+    $button3=$("<button id='button3'>Clear</button>");
+    $("<style type='text/css'> .button{ height: "+(0.05*clientHeight)+"px; width: "+(0.15*clientWidth)+"px; margin:auto 10px;} </style>").appendTo('body');//button css
 
-$('div').append($button1, $button2, $button3);//add buttons to DOM
-$('button').addClass("button");//add button CSS
+    $buttons=$('<div style="text-align:center"></div>');
+    $buttons.appendTo('body');
+    $('div').append($button1,$button2,$button3);
+    $('button').addClass("button");
 
-$("<style type='text/css'>body{background-color: #666}</style>").appendTo('body'); // add background-color 2 body
+    $("<style type='text/css'>body{background-color: #666}</style>").appendTo('body'); // add background-color 2 body
 
 
 $container=$('<div id="container"></div>');//define container
@@ -45,10 +47,9 @@ newSquares();
 normalHover();
 
 var getRandomColor=function() {
-    var letters = '0123456789ABCDEF'.split('');
     var color = '#';
     for (var i = 0; i < 6; i++ ) {
-        color += letters[Math.floor(Math.random() * 8)];
+        color += [Math.floor(Math.random() * 16)];
     }
     return color;
 }
