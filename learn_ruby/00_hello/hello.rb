@@ -1,2 +1,8 @@
 #write your code here
-trtrtr
+def hello
+	"Hello!"
+end
+
+def greet(who)
+	"Hello, #{who}!"
+end
