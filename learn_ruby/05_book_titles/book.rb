@@ -1,4 +1,4 @@
-class Book
+
 
 class Book
 
@@ -24,4 +24,4 @@ class Book
   	end
 
 end
-end
+
