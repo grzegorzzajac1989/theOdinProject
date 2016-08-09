@@ -73,9 +73,7 @@ describe "sum" do
   end
 end
 
-# Extra Credit Test-Driving Bonus:
-# once the above tests pass,
-# write tests and code for the following:
+
 
 describe "#multiply" do
 
