@@ -1,6 +1,13 @@
 <h1><%= @article.title %></h1>
 <p><%= @article.body %></p>
 
+<h3>Comments (<%= @article.comments.count %>)</h3>
+<%= render partial: 'articles/comment', collection: @article.comments %>
+
+
+<%= render partial: 'comments/form' %>
+
+
 <%= link_to "<< Back to Articles List", articles_path %>
 
 <%= link_to "edit", edit_article_path(@article) %>
@@ -9,3 +16,4 @@
 	data: {confirm: "Really delete the article?"},
 	method: :delete 
 	%>
+
