@@ -18,8 +18,8 @@
           <%= "Logged in as #{current_user.email}" %>
           <%= link_to "(logout)", logout_path %>
         <% else %>
-          <%= link_to "(login)", login_path %>
-          <%= link_to "(create)", 'authors#new' %>
+          <%= link_to "Login", login_path %>
+          <%= link_to "Sign up", new_author_path %>
         <% end %>
       </h6>
     </div>
