@@ -1,5 +1,5 @@
-* Ruby version 2.3.0
-* Rails version 5.0.0.1
+* Ruby version: 2.3.0
+* Rails version: 5.0.0.1
 
 <a href="http://www.theodinproject.com/web-development-101/ruby-on-rails?ref=lc-pb"> The Odin Project #4 Project: Rails </a>:
 <br>
