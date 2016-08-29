@@ -1,2 +1,2 @@
-# theOdinProject 
-http://www.theodinproject.com/users/51456
+### [projectEuler Ruby section](http://www.theodinproject.com/ruby-programming#section-basic-ruby "projectEuler")
+
