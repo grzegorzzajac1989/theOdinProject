@@ -1,18 +1,27 @@
 #!/usr/bin/ruby
 
 def bubble_sort(array)
-  #external loop
-  for i in 1...(array.length) do
-  	#internal loop
-	for i in 1...array.length do
-	  #compare
-	  if array[i-1] > array[i]
-	  	#swap
-		array[i-1], array[i] = array[i], array[i-1]		
-	  end
+	(1...array.size).each do |a|
+		(0...array.size - a).each do |b|
+			if array[b] > array[b + 1]
+				array[b], array[b + 1] = array[b + 1], array[b]
+			end 
+		end
 	end
-  end
-puts array
+	puts array
+end
+
+def bubble_sort_by(array)
+	(1...array.size).each do |a|
+		(0...array.size - a).each do |b|
+			if yield(array[b], array[b + 1]) > 0
+				array[b], array[b + 1] = array[b + 1], array[b]
+			end
+		end
+	end
+	puts array
 end
 
 bubble_sort([4,3,78,2,0,2])
+
+bubble_sort_by(["hi","hello","hey"]) {|left, right| left.length - right.length}
